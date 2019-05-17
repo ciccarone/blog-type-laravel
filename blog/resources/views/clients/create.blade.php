@@ -12,18 +12,13 @@
   @csrf
   <div class="row">
     <div class="cell">
-      <input type="text" class="form-control" name="service_name" placeholder="Service Name" />
+      <input type="text" class="form-control" name="client_name" placeholder="Client Name" />
     </div>
     <div class="cell">
-      <input type="text" class="form-control" name="service_description" placeholder="Service Description" />
+      <input type="text" class="form-control" name="client_description" placeholder="Client Description" />
     </div>
     <div class="cell">
-      <select name="service_parent">
-        <option value="">Service Parent</option>
-        @foreach ($clients as $service)
-          <option value="{{ $service->id }}">{{ $service->service_name }}</option>
-        @endforeach
-      </select>
+      <input type="file" class="form-control" name="client_logo" placeholder="Client Logo" />
     </div>
     <div class="cell">
       <button type="submit" class="btn btn-primary">Add</button>

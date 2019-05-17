@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::resource('admin/services', 'ServiceController');
+Route::resource('admin/clients', 'ClientController');
